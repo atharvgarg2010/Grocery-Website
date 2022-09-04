@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header section stars -->
+    atharv
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket">
+                <p style="display: inline;"> Groco </p>
+            </i></a>
+
+        <div class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">featured</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blog">blog</a>
+        </div>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn" onclick="search_bar()"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="user-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="text" class="inp" placeholder="search here..">
+            <label class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart" id="shoppingcart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+
+                <img src="./image/cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">&#8377;150/- Qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="./image/cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>Chicken</h3>
+                    <span class="price">&#8377;150/- Qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+
+                <img src="./image/cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>Onion</h3>
+                    <span class="price">&#8377;150/- Qty : 1</span>
+                </div>
+            </div>
+            <div class="total">
+                <h2>Total Price : &#8377;450/-</h2>
+                <button class="btn">Checkout</button>
+
+            </div>
+        </div>
+
+        <form action="" class="form-2">
+            <div class="h">
+                <h2>Login Now</h2>
+            </div>
+
+            <input type="email" placeholder="enter your e-mail">
+            <input type="password" placeholder="enter your password">
+
+            <p>Forgot password <a>Click Here</a></p>
+            <p>Do not have account <a>Create Now</a></p>
+            <button class="btn" onclick="welcome()">Login Now</button>
+        </form>
+
+
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section ends -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h2>Fresh and <span>Oraganic</span> Products for Your</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing. <br> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Explicabo, possimus! Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Show More</button>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features section ends -->
+    <section class="features" id="featured">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="boxer">
+            <div class="boxes">
+                <div class="box">
+                    <img src="./image/feature-img-1.png" alt="">
+                    <div class="content">
+                        <h2>Fresh and Organic</h2>
+                        <p>Lorem ipsum dolor, sit amet c. <br> Iste ullam atque possimus.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes" style="position: relative; top: -1.8rem;">
+                <div class="box">
+                    <img src="./image/feature-img-2.png" alt="">
+                    <div class="content">
+                        <h2>Fast Delivery</h2>
+                        <p> sit amet consectetur adipisicing elit. Iste ullam atque possimus.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes" style="position: relative; top: -.7rem;">
+                <div class="box">
+                    <img src="./image/feature-img-3.png" alt="">
+                    <div class="content">
+                        <h2>Easy Payment</h2>
+                        <p>Lorem ipsum dolor adipisicing elit. Iste ullam atque possimus.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- product section starts -->
+
+    <section class="Products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+
+        <div class="swiper Product-Slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="./image/product-1.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Oranges</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/product-3.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Meat</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/product-4.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Cabbage</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/product-2.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Onion</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="swiper Product-Slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="./image/product-5.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Potatoes</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/product-7.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Carrot</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/product-6.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Avacado</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="./image/product-8.png" alt="">
+                    <div class="content">
+                        <h2>Fresh Lemon</h2>
+                        <p>&#8377; 129-/ -- &#8377; 329-/</p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button style="display: block;" class="btn">Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- product section ends -->
+
+    <!--categories section ends -->
+    <section class="Categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+
+        <div class="box-container">
+            <div class="swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img src="./image/cat-1.png" alt="">
+                    <h2>Vegetables</h2>
+                    <p>Upto 51% Off</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="./image/cat-2.png" alt="">
+                    <h2>Fruits</h2>
+                    <p>Upto 51% Off</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="./image/cat-3.png" alt="">
+                    <h2>Dairy</h2>
+                    <p>Upto 51% Off</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="./image/cat-4.png" alt="">
+                    <h2>Meat</h2>
+                    <p>Upto 51% Off</p>
+                    <button class="btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  categories section ends -->
+
+    <!--  reviews section starts -->
+
+    <section class="Review" id="review">
+        <h1 class="heading" style="margin-bottom: 5rem;">Client <span>Reviews</span></h1>
+
+        <div class="Review-Container">
+            <div class="swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img src="./image/pic-1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque laboriosam quis
+                        ratione?</p>
+                    <h2>Kananed Khurana</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="./image/pic-2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque laboriosam quis
+                        ratione?</p>
+                    <h2>Shreja Garg</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="./image/pic-3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque laboriosam quis
+                        ratione?</p>
+                    <h2>Lotin thirty</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="box swiper-slide">
+                    <img src="./image/pic-4.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque laboriosam quis
+                        ratione?</p>
+                    <h2>Mohin Verma</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  reviews section ends -->
+
+    <!--  reviews section ends -->
+
+    <section class="blog" id="blog">
+        <h1 class="heading">Our <span>Blogs</span></h1>
+        <div class="box">
+            <img src="./image/blog-1.jpg" alt="">
+            <div class="by">
+                <i class="fas fa-user">
+                    <p>by Atharv</p>
+                </i>
+                <i style="display: block; margin-top: 0.5rem;"  class="fas fa-calendar">
+                    <p style="display: inline-block; ">1st May 2021</p>
+                </i>
+            </div>
+            <div class="content">
+                <h2>Fresh and Organic Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel dolores odit qui, vitae illum.</p>
+                <button class="btn">Show More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./image/blog-3.jpg" alt="">
+            <div class="by">
+                <i class="fas fa-user">
+                    <p>by Atharv</p>
+                </i>
+                <i style="display: block; margin-top: 0.5rem;"  class="fas fa-calendar">
+                    <p style="display: inline-block; ">1st May 2021</p>
+                </i>
+            </div>
+            <div class="content">
+                <h2>Fresh and Organic Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel dolores odit qui, vitae illum.</p>
+                <button class="btn">Show More</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./image/blog-2.jpg" alt="">
+            <div class="by">
+                <i class="fas fa-user">
+                    <p>by Atharv</p>
+                </i>
+                <i style="display: block; margin-top: 0.5rem;"  class="fas fa-calendar">
+                    <p style="display: inline-block; ">1st May 2021</p>
+                </i>
+            </div>
+            <div class="content">
+                <h2>Fresh and Organic Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel dolores odit qui, vitae illum.</p>
+                <button class="btn">Show More</button>
+            </div>
+        </div>
+    </section>
+
+    <!--  reviews section ends -->
+
+    <div class="footer">
+        <h2>all Credits Deserved By <span> Atharv</span></h2>
+    </div>
+
+</body>
+
+<!-- javascript starts -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    var search = document.querySelector(".search-form");
+    var shopcart = document.querySelector(".shopping-cart")
+    var user = document.querySelector(".form-2")
+    var nav = document.querySelector(".navbar")
+
+    var swiper = new Swiper(".Product-Slider", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    var swiper = new Swiper(".Review-Container", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 15,
+        autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            880: {
+                slidesPerView: 1,
+            },
+            1068: {
+                slidesPerView: 2,
+            },
+            1548: {
+                slidesPerView: 3,
+            },
+        },
+    });
+    var swiper = new Swiper(".box-container", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+
+    function search_bar() {
+        search.classList.toggle("active")
+        shopcart.classList.remove("active1")
+        user.classList.remove('active2')
+        nav.classList.remove("active3")
+
+    }
+
+    document.querySelector('#cart-btn').onclick = () => {
+        shopcart.classList.toggle('active1')
+        search.classList.remove("active")
+        user.classList.remove('active2')
+        nav.classList.remove("active3")
+
+
+    }
+
+    document.querySelector('#user-btn').onclick = () => {
+        user.classList.toggle('active2')
+        search.classList.remove("active")
+        shopcart.classList.remove("active1")
+        nav.classList.remove("active3")
+
+    }
+    document.querySelector('#menu-btn').onclick = () => {
+        nav.classList.toggle('active3')
+        search.classList.remove("active")
+        shopcart.classList.remove("active1")
+        user.classList.remove("active2")
+
+    }
+
+    function welcome() {
+        alert("Welcome To Groco")
+    }
+
+    song = new Audio('ForestWalk-320bit.mp3')
+    // song.play()
+
+</script>
+
+<!-- javascript ends -->
+
+</html>
